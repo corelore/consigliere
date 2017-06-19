@@ -11,7 +11,31 @@ Don't let API rate limiting ruin your day: Consigliere tracks token freshness an
 5. Retrieve new token(s) as needed.
 
 ## Installation
-`$ npm install consigliere`
+```shell
+$ npm install
+```
+
+## Usage - Available Build and Test Operations
+
+### Build and Run Test Suite (.min.js & .js)
+```shell
+$ node make
+```
+
+### Just Run Test Suite, No Build
+```shell
+$ node make test
+```
+
+### Build ES5 .js from ES6 (Unminified)
+```shell
+$ node make build
+```
+
+### Watch and Build on File Change
+```shell
+$ node make watch
+```
 
 ## Implementation
 - Experimenting with JS/ES6 and Python 3.X on Postgres variations.

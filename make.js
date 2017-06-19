@@ -1,7 +1,7 @@
 // name of the library
 global.library = 'Consigliere'
 
-var command = process.argv[2],
+const command = process.argv[2],
   utils   = require('./tasks/_utils'),
   eslint  = require('./tasks/eslint'),
   test    = require('./tasks/test'),
