@@ -1,0 +1,56 @@
+{
+  "name": "consigliere",
+  "version": "0.1.0",
+  "description": "Manage secret and token freshness for API circumvention.",
+  "author": "CoreLore <softcorelore@gmail.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "jsnext:main": "src/index.js",
+  "scripts": {
+    "test": "node make test",
+    "serve": "node make serve",
+    "eslint": "node make eslint",
+    "build": "node make build",
+    "watch": "node make watch",
+    "minify": "node make minify",
+    "default": "node make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/corelore/consigliere.git"
+  },
+  "bugs": {
+    "url": "https://github.com/corelore/consigliere/issues/"
+  },
+  "homepage": "https://github.com/corelore/consigliere",
+  "keywords": [
+    "token",
+    "dealer",
+    "rate-limit",
+    "github",
+    "twitter",
+    "facebook",
+    "api"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.0.0",
+    "chokidar": "^1.7.0",
+    "eslint": "^3.19.0",
+    "karma": "^1.7.0",
+    "karma-babel-preprocessor": "^6.0.1",
+    "karma-coverage": "^1.1.1",
+    "karma-mocha": "^1.3.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "mkdirp": "^0.5.1",
+    "rollup": "^0.43.0",
+    "serve": "^5.2.2",
+    "sinon": "^2.3.2",
+    "sinon-chai": "^2.10.0",
+    "uglify-js": "^3.0.10",
+    "mocha": "^3.4.2",
+    "phantomjs-prebuilt": "^2.1.14"
+  }
+}
