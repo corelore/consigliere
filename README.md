@@ -6,8 +6,11 @@ Don't let API rate limiting ruin your day: Consigliere tracks token freshness an
 2. Retrieve token(s) like `Consigliere.getToken('token-type')`.
 3. Use tokens for app like normal.
 4. When requests indicate expired or timed out, indicate so:
-...`Consigliere.setToken('token-id','reset-timestamp')` or:
-...`Consigliere.expireTokenPermanent('token-id')`
+
+   `Consigliere.setToken('token-id','reset-timestamp')` or:
+
+   `Consigliere.expireTokenPermanent('token-id')`
+
 5. Retrieve new token(s) as needed.
 
 ## Installation
@@ -42,7 +45,9 @@ $ node make watch
 
 ## Considerations
 1. Since an app can acquire 0 or more keys before initiating API requests the app must know how many requests before it should switch.
-...-> Store the rate limit with the token (eg. `timeoutAfterRequestCount(1000)` for 1000 requests).
+
+   -> Store the rate limit with the token (eg. `timeoutAfterRequestCount(1000)` for 1000 requests).
+
 2. Not economical to request new token for each request.
 3. Support up to 1,000,000 tokens?
 4. When multiple client apps, how to select API key not 1) in-use and 2) not recently used.
