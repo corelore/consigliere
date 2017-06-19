@@ -1,6 +1,6 @@
 /* global Consigliere */
 describe('Core', function() {
-  it('Consigliere exsists', () => expect(Consigliere).is.not.undefined )
+  it('Consigliere exists', () => expect(Consigliere).is.not.undefined )
 
   it('it can send friendly messages', () => {
     var consigliere = new Consigliere()
